@@ -1,0 +1,105 @@
+@import 'utilities.css';
+
+
+body{
+    background: rgb(168, 168, 155);
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+    
+}
+ 
+section.slido .slider .slide  {
+    width: 100%;
+    height:50vh;
+    object-fit: cover;  
+    
+  }
+
+
+  
+  section.slido .slider .slide{
+      text-align: center; 
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+  }
+  section.slido .slider .slide p{
+      font-size: 16px;
+      font-family: 'lato', sans-serif;
+      font-weight: 400;
+      line-height: 1.2rem;
+  }
+  section.slido .slider .slide input{
+      
+      width: 400px;
+      border-radius: 20px;
+      padding : 10px;
+      border: none;
+      text-align: start;
+  }
+  section.slido .slider-dots .dots{
+      list-style-type: none;
+      display: flex!important;
+      justify-content: center;
+  }
+  section.slido .slider-dots {
+      margin-top: 3rem;
+  }
+  section.slido .slider-dots button{
+      font-size: 0px;
+      width: 8px;
+      height: 5px;
+      margin-right: 0.3rem;
+      border: none;
+      outline: none;
+      background: teal;
+      border-radius: 45%;
+      cursor: pointer;
+  }
+  
+  section.slido .dots  li.slick-active{
+     /*  background: teal;*/
+      width: 30px;
+  }
+
+  section.slido .slick-prev{
+      position:absolute;
+      left:10px;
+      top:30%;
+      font-size: 0;
+    border-radius: 45%;
+  }
+
+  section.slido .slick-prev::before{
+    content: ">";
+    font-size: 20px;
+    color: black;
+    justify-content: center;
+    align-items: center;
+   
+}
+  section.slido .slick-next{
+    position:absolute;
+    right:10px;
+    font-size: 0;
+    border-radius: 45%;
+    cursor: pointer;
+    top: 50%;
+}
+section.slido .slick-next::before{
+    content: ">";
+    font-size: 20px;
+    color: black;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+ 
+
+  
+   
