@@ -1,18 +1,16 @@
-@import 'utilities.css';
+ 
 
 
-body{
-    background: rgb(168, 168, 155);
-    box-sizing: border-box;
-    /* margin: 0;
-    padding: 0; */
-    
+body{ 
+    margin: 0;
+    padding: 0;  
 }
  
 section.slido .slider .slide  {
     width: 100%;
     height:50vh;
-    object-fit: cover;  
+    object-fit: cover;
+    opacity: 0.9;
     
   }
 
@@ -26,19 +24,17 @@ section.slido .slider .slide  {
       align-items: center;
       
   }
-  section.slido .slider .slide p{
-      font-size: 16px;
-      font-family: 'lato', sans-serif;
-      font-weight: 400;
-      line-height: 1.2rem;
-  }
-  section.slido .slider .slide input{
-      
-      width: 400px;
-      border-radius: 20px;
-      padding : 10px;
-      border: none;
-      text-align: start;
+  
+
+  section.slido .content{
+      position: absolute;
+    text-align: center;
+    top: 30%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     
+    
+
   }
   section.slido .slider-dots .dots{
       list-style-type: none;
@@ -46,7 +42,7 @@ section.slido .slider .slide  {
       justify-content: center;
   }
   section.slido .slider-dots {
-      margin-top: 3rem;
+      margin-top: 0rem;
   }
   section.slido .slider-dots button{
       font-size: 0px;
@@ -55,20 +51,21 @@ section.slido .slider .slide  {
       margin-right: 0.3rem;
       border: none;
       outline: none;
-      background: teal;
-      border-radius: 45%;
+      background: white;
+      border-radius: 60%;
       cursor: pointer;
   }
   
   section.slido .dots  li.slick-active{
-     /*  background: teal;*/
+       
       width: 30px;
   }
 
   section.slido .slick-prev{
+      z-index: 1;
       position:absolute;
       left:10px;
-      top:30%;
+      top:50%;
       font-size: 0;
     border-radius: 45%;
   }
@@ -84,7 +81,7 @@ section.slido .slider .slide  {
   section.slido .slick-next{
     position:absolute;
     right:10px;
-    font-size: 0;
+    font-size: 0; 
     border-radius: 45%;
     cursor: pointer;
     top: 50%;
@@ -99,6 +96,32 @@ section.slido .slick-next::before{
 }
 
 
+.content .input-icons input{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    border:  2px solid gray;
+    background: none;
+    border-radius: 8px;
+    opacity: 0.9;
+}
+.content .input-icons .fa{
+    position: absolute;
+    right: 10px;
+    margin-top: 8px;
+}
+
+.content .input-icons input{
+    width: 100%;
+    text-align: center;
+}
+.content .input-icons{
+    display: flex;
+    justify-content: right;
+    text-align: right;
+}
+
+ 
  
 
   
